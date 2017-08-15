@@ -1,6 +1,6 @@
 var orm = require('./../config/orm.js');
 
-module.exports = {
+let burgers = {
     // create new burger instance
     createBurger: (newBurger, callback) => {
         orm.insertOne(newBurger, () => {
@@ -22,4 +22,5 @@ module.exports = {
         });
     }
 };
+
 module.exports = burgers;
